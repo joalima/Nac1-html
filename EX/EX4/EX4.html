@@ -1,0 +1,107 @@
+</head>
+<style>
+	* {
+		font-family: Arial;
+	}
+
+	h1{
+        text-align: center;
+		color: darkgrey;
+    }
+
+    p {
+		display: inline-block;
+	}
+
+	select {
+		background: #ddd;
+		border: 1px solid #333;
+        border-radius: 15px;
+		font-size: 20px;
+	}
+    input {
+		background: #ddd;
+		border: 1px solid #333;
+		font-size: 20px;
+	}
+		 
+ 	.w1 {
+ 		width: 700px;
+ 	}
+
+ 	.w2 {
+ 		width: 300px;
+ 	}
+
+ 	.MGL{
+ 		margin-left: 95px;
+ 	}
+
+ 	.BL {
+ 		display: block;
+ 	}
+    
+     #button {
+		padding: 10px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+    fieldset {
+		margin: 0 auto;
+		width: 800px;
+	}
+</style>
+<body>
+	<h1>Ficha Cadastral</h1>
+	<fieldset><legend>Dados Pessoais:</legend>
+		
+		<p>
+		<label for="Nome">Nome:<br>
+		<input class="w1" type="Text" name="Nome" id="Nome">	
+		</label>
+		</p>
+		<p>
+		<label for="RG">RG:<br>
+		<input class="w2" type="Text" name="RG" id="RG">	
+		</label>
+		</p>
+		<p class="MGL">
+		<label for="CPF">CPF:<br>
+		<input class="w2" type="Text" name="CPF" id="CPF">	
+		</label>
+		</p>
+		<p>
+		<label for="Endereco">Endereço:<br>
+		<input class="w1" type="Text" name="Endereço" id="Endereço"> 	
+		</label>
+		</p>
+		<p>
+		<label for="Unidade">Gênero<br>
+		<select class="w2">
+        <option value=""></option>
+		<option value="Fem">Feminino</option>
+		<option value="Masc">Masculino</option>
+		</select>
+		</label>
+		</p>
+		<p class="MGL">
+		<label for="Data">Data de Nascimento:<br>
+		<input class="w2" type="Text" name="Data" id="Data">	
+		</label>
+		</p>
+        <p class="BL">
+        Situação Civil:<br>
+		<input type="radio" id="Solteiro"  name="Sit" value="Solteiro">
+		<label for="Solteiro">Solteira(o)</label>
+		<input type="radio" id="Casado" name="Sit" value="Casado">
+		<label for="Casado">Casado(a)</label>
+		<input type="radio" id="Viuvo" name="Sit" value="Viuvo">
+		<label for="Viuvo">Viúva(o)</label>
+		</p>
+		<button ="button">Cadastrar</button>
+		</form>
+	</fieldset>
+</body>
+</html>
